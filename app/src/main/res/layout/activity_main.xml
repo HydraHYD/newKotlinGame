@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_layout_1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/finish_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/congrats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Congratulations!"
+            android:textSize="40dp"
+            android:paddingBottom="60dp"
+            />
+
+        <ImageView
+            android:id="@+id/complete_pikachu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat = "@drawable/pikachu_main"
+            />
+
+        <TextView
+            android:id="@+id/time_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="30dp"
+            android:paddingTop="60dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pikachu_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/pikachu_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pikachu_left_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_left_top" />
+
+            <ImageView
+                android:id="@+id/pikachu_left_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_left_middle" />
+
+            <ImageView
+                android:id="@+id/pikachu_left_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_left_bottom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pikachu_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pikachu_center_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_center_top" />
+
+            <ImageView
+                android:id="@+id/pikachu_center_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_center_middle" />
+
+            <ImageView
+                android:id="@+id/pikachu_center_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_center_bottom" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pikachu_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/pikachu_right_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_right_top" />
+
+            <ImageView
+                android:id="@+id/pikachu_right_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_right_middle" />
+
+            <ImageView
+                android:id="@+id/pikachu_right_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                app:srcCompat="@drawable/pikachu_right_bottom" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
